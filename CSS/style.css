@@ -1,0 +1,32 @@
+@font-face {
+    font-family:"Roboto";
+    src: url("../Police/Roboto-Regular.eot");
+    src: url("../Police/Roboto-Regular.ttf") format("truetype"),
+         url("../Police/Roboto-Regular.woff") format("woff"),
+         url("../Police/Roboto-Regular.svg") format("svg");
+
+    font-family:"Shrikhand";
+    src: url("../Police/Shrikhand-Regular.eot");
+    src: url("../Police/Shrikhand-Regular.ttf") format("truetype"),
+         url("../Police/Shrikhand-Regular.woff") format("woff"),
+         url("../Police/Shrikhand-Regular.svg") format("svg");
+}
+
+.primary_color
+{
+    color: #9356DC;
+}
+
+.secondary_color
+{
+    color: #FF79DA;
+}
+
+.third_color
+{
+    color: #99E2D0;
+}
+
+h1{
+    font-family: "Shrikhand";
+}
