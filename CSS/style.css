@@ -1,13 +1,23 @@
-.primary_color {
-  color: #9356DC;
+/* @import "./base/_base"; */
+/* Palette */
+/* Texte */
+.txt {
+  font-family: "Roboto";
 }
-
-.secondary_color {
-  color: #FF79DA;
+.txt .txt--bold {
+  font-weight: bold;
 }
-
-.third_color {
-  color: #99E2D0;
+.txt .txt--entry {
+  margin-left: 5%;
+}
+.txt .txt--small {
+  font-size: 12px;
+}
+.txt .txt--medium {
+  font-size: 20px;
+}
+.txt .txt--large {
+  font-size: 26px;
 }
 
 h1 {
@@ -24,10 +34,13 @@ body {
 .location {
   display: flex;
   width: 100%;
-  height: 99px;
+  height: 45px;
   background-color: #d1d1d1;
   justify-content: center;
+  align-items: center;
   font-family: "Roboto";
+  border-top: solid;
+  border-top-color: grey;
 }
 
 .reservation {
@@ -37,14 +50,27 @@ body {
   background-color: #ececec;
   font-family: "Roboto";
   justify-content: center;
+  align-items: center;
+  align-items: center;
   flex-wrap: wrap;
   font-family: "Roboto";
+  padding-bottom: 10px;
 }
-
-.bloc_reservation {
+.reservation .reservation__bloc {
   display: flex;
   width: 100%;
   height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_exploration {
+  display: flex;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 35px;
+  color: white;
+  width: 70% !important;
+  height: 65px !important;
 }
 
 /* main */
@@ -61,13 +87,44 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   font-family: "Roboto";
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
 }
-
-.bloc_fonctionnement {
+.fonctionnement .fonctionnement__bloc {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 100px;
   background-color: #ececec;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  margin: 5px;
+  -webkit-box-shadow: 1px 1px 3px 1px #dedede;
+  -moz-box-shadow: 1px 1px 3px 1px #dedede;
+  box-shadow: 1px 1px 3px 1px #dedede;
+}
+.fonctionnement .fonctionnement__bloc .fonctionnement__bloc--number {
+  align-self: left;
+  place-self: left;
+  background-color: #9356DC;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-justify: center;
+  line-height: 26px;
+  color: white;
+  position: relative;
+  left: -30%;
+}
+.fonctionnement .fonctionnement__bloc .fonctionnement__bloc--icon {
+  color: grey;
+  font-size: 20px;
+  position: relative;
+  left: -65px;
 }
 
 .restaurants {
@@ -76,18 +133,34 @@ main {
   background-color: #ececec;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-
-.bloc_restaurants {
+.restaurants .restaurants__bloc {
   display: flex;
   height: 200px;
   background-color: white;
   flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  background-color: white;
+  border-radius: 35px;
+  margin: 25px 5px 5px 5px;
+  -webkit-box-shadow: 1px 1px 3px 1px #dedede;
+  -moz-box-shadow: 1px 1px 3px 1px #dedede;
+  box-shadow: 1px 1px 3px 1px #dedede;
 }
 
-.bloc_restaurants_txt {
-  display: flex;
+h2 {
   width: 100%;
+}
+
+figcaption {
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
 }
 
 /* footer */
@@ -98,6 +171,13 @@ footer {
   width: 100%;
   height: 300px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.footer_icon {
+  margin-right: 15px;
 }
 
 .titre_footer {
@@ -109,6 +189,14 @@ footer {
   display: flex;
   width: 100%;
   font-family: "Roboto";
+}
+
+.img_cover {
+  object-fit: cover;
+  width: 100%;
+  height: 75%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,61 +14,76 @@
 <body>
     <header>
         <h1>ohmyfood</h1>
-        <div class= "location">
-            <div>Paris, Belleville</div>
+        <div class= "location txt">
+            <div class="txt--bold txt--small"><i class="fas fa-map-marker-alt"></i>  Paris, Belleville</div>
         </div>
-        <div class="reservation">
-            <div class="bloc_reservation">
+        <div class="reservation txt">
+            <div class="reservation__bloc txt--bold txt--large">
                 Réservez le menu qui vous convient
             </div>
-            <div class="bloc_reservation">
+            <div class="reservation__bloc txt--medium">
                 Découvrez des restaurants d'exception, séléctionnés par nos soins.
             </div>
-            <div class="bloc_reservation">
+            <div class="reservation__bloc btn_exploration txt--medium">
                 Explorer nos restaurants
             </div>
         </div>
     </header>
 
     <main>
-        <div class="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <div class="bloc_fonctionnement">
-                Choisissez un restaurant
+        <div class="fonctionnement txt">
+            <h2 class="txt--bold txt--entry">Fonctionnement</h2>
+            <div class="fonctionnement__bloc txt--small">
+                <div class="fonctionnement__bloc--number">1</div>
+                <i class="fas fa-mobile-alt fonctionnement__bloc--icon"></i>Choisissez un restaurant
             </div>
-            <div class="bloc_fonctionnement">
-                Composez votre menu
+            <div class="fonctionnement__bloc txt--small">
+                <div class="fonctionnement__bloc--number">2</div>
+                <i class="fas fa-list fonctionnement__bloc--icon"></i>Composez votre menu
             </div>
-            <div class="bloc_fonctionnement">
-                Dégustez au restaurant
+            <div class="fonctionnement__bloc txt--small">
+                <div class="fonctionnement__bloc--number">3</div>
+                <i class="fas fa-store fonctionnement__bloc--icon"></i>Dégustez au restaurant
             </div>
         </div>
 
-        <div class="Restaurants">
-            <h2>Restaurants</h2>
-            <div class="bloc_restaurants">
-                <div class="bloc_restaurants_txt">La palette du goût</div>
-                <div class="bloc_restaurants_txt">Ménilmontant</div>
-            </div>
-            <div class="bloc_restaurants">
-                <div class="bloc_restaurants_txt">La note enchantée</div>
-                <div class="bloc_restaurants_txt">Charonne</div>
-            </div>
-            <div class="bloc_restaurants">
-                <div class="bloc_restaurants_txt">A la française</div>
-                <div class="bloc_restaurants_txt">Cité Rouge</div>
-            </div>
-            <div class="bloc_restaurants">
-                <div class="bloc_restaurants_txt">Le délice des sens</div>
-                <div class="bloc_restaurants_txt">Folie-Méricourt</div>
-            </div>
+        <div class="restaurants txt">
+            <h2 class="txt--entry txt--bold">Restaurants</h2>
+            <figure class="restaurants__bloc txt">
+                <img src="images/restaurant_front/lapalettedugoût.jpg" class="img_cover"
+                            alt="Photo restaurant la palette du goût">
+                <figcaption class="bloc_restaurants_txt">La palette du goût</figcaption>
+                <figcaption class="bloc_restaurants_txt">Ménilmontant</figcaption>
+            </figure>
+
+            <figure class="restaurants__bloc txt">
+                <img src="images/restaurant_front/Lanoteenchantée.jpg" class="img_cover"
+                            alt="Photo restaurant La note enchantée">
+                <figcaption class="bloc_restaurants_txt">La note enchantée</figcaption>
+                <figcaption class="bloc_restaurants_txt">Charonne</figcaption>
+            </figure>
+
+            <figure class="restaurants__bloc txt">
+                <img src="images/restaurant_front/Alafrançaise.jpg" class="img_cover"
+                            alt="Photo restaurant A la française">
+                <figcaption class="bloc_restaurants_txt">A la française</figcaption>
+                <figcaption class="bloc_restaurants_txt">Cité Rouge</figcaption>
+            </figure>
+
+            <figure class="restaurants__bloc txt">
+                <img src="images/restaurant_front/Ledélicedessens.jpg" class="img_cover"
+                            alt="Photo restaurant Le délice des sens">
+                <figcaption class="bloc_restaurants_txt">Le délice des sens</figcaption>
+                <figcaption class="bloc_restaurants_txt">Folie-Méricourt</figcaption>
+            </figure>
+
         </div>
     </main>
 
-    <footer>
+    <footer class="txt footer">
         <div class="titre_footer">ohmyfood</div>
-        <div class="lien_footer">Proposez un restaurant</div>
-        <div class="lien_footer">Devenir partenaire</div>
+        <div class="lien_footer"><i class="fas fa-utensils footer_icon"></i>Proposez un restaurant</div>
+        <div class="lien_footer"> <i class="fas fa-hands-helping footer_icon"></i>Devenir partenaire</div>
         <div class="lien_footer">Mentions légales</div>
         <div class="lien_footer">Contact</div>
     </footer>
