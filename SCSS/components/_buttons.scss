@@ -1,0 +1,34 @@
+.btn_exploration
+{
+  display:flex;
+  background: linear-gradient($secondary_color , $primary_color);
+  border-radius: 35px;
+  color: $white;
+  height: 65px !important;
+  width: 70%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.btn_commander
+{
+    display:flex;
+    background: linear-gradient($secondary_color , $primary_color);
+    border-radius: 35px;
+    color: $white;
+    width: 50% !important;
+    height: 50px !important;
+    justify-content: center;
+    position: relative;
+    left: 25%;
+    line-height: 3;
+    margin-top: 10%;
+}
+
+.btn_retour{
+    color: grey;
+    position: relative;
+    left: -18%;
+}
