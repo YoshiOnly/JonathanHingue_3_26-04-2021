@@ -193,10 +193,8 @@ footer
     left: 18%;
     }
     .menu__titre{
-        width: 100%;
-        position: relative;
-        left: -10%;
-        top: 2%;
+        width: 80%;
+        margin-right: 20%;
     }
 
     .menu__bloc{
@@ -208,16 +206,46 @@ footer
             text-decoration-thickness: 5px;
             text-underline-offset: 5px;
         }
+
         .menu__bloc--recette{
             width: 92%;
+            height: 75px;
             background-color: $white;
             border-radius: 15px;
+            padding-bottom: 0%;
             margin-top: 10px;
             margin-bottom: 15px;
             margin-left: 3%;
-            padding-bottom: 2%;
             transition-property: transform;
             transition-duration: 1000ms;
+            display: flex;
+            overflow: hidden;
+
+            animation-duration: 2500ms;
+            animation-fill-mode: both;
+            animation-name: bloc-apparition;
+            &:hover{
+                .menu__bloc--validation
+                {
+                animation-name: validation-recette;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                    .icon-validation
+                    {
+                    transition-property: transform;
+                    transition-duration: 1000ms;
+                    transform: rotate(360deg);
+                    }
+                }
+                .menu__bloc--recette_prix
+                {
+                    margin-left: 0%;
+                transition-property: transform;
+                transition-duration: 1000ms;
+                transform: scale(50px,50px);
+                }
+            }
+
             .menu__bloc--recette--text
             {
                 display: flex;
