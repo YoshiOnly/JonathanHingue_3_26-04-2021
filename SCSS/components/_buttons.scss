@@ -10,6 +10,11 @@
   margin-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
+  &:hover{
+    animation-name: btn-click ;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+  }
 }
 
 .btn_commander
@@ -25,6 +30,12 @@
     left: 25%;
     line-height: 3;
     margin-top: 10%;
+    &:hover{
+      animation-name: btn-click ;
+      animation-duration: 500ms;
+      animation-fill-mode: both;
+    }
+    
 }
 
 .btn_retour{
