@@ -1,0 +1,109 @@
+/* animations */
+
+@keyframes validation-recette
+{
+    0%{
+        transform: translate(100px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+        background-color: $third_color;
+    }
+}
+
+@keyframes btn-click
+{
+    0%{
+        background:  linear-gradient($secondary_color , $primary_color);
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    }
+    50%{
+        background: linear-gradient(lighten($secondary_color, 5%) ,lighten( $primary_color , 5%));
+    }
+    100%{
+        background: linear-gradient(lighten($secondary_color, 10%) ,lighten( $primary_color , 10%));
+        -webkit-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+    }
+}
+
+@keyframes like-animation {
+    0%{
+        color: transparent;
+        transform: scale(0.1);
+    }
+    100%{
+        color: red;
+        transform: scale(1);
+        outline: gray;
+        outline-width: 5px;
+    }
+}
+
+@keyframes bloc-apparition{
+    0% {
+        transform: translate(0px,40px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(0px,0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes loader-animation
+{
+    0%{
+        transform: rotate(-360deg);
+        color: $secondary_color;
+    }
+    75%{
+        color: $primary_color;
+    }
+    100%{
+        display: none;
+        background-color: transparent;
+        color: transparent;
+    }
+}
+
+.animation_delay_1 {
+    animation-delay: 0.25s;
+}
+.animation_delay_2 {
+    animation-delay: 0.5s;
+}
+.animation_delay_3 {
+    animation-delay: 0.75s;
+}
+.animation_delay_4 {
+    animation-delay: 0.75s;
+}
+.animation_delay_5 {
+    animation-delay: 1s;
+}
+.animation_delay_6 {
+    animation-delay: 1.25s;
+}
+.animation_delay_7 {
+    animation-delay: 1.5s;
+}
+.animation_delay_8 {
+    animation-delay: 1.75s;
+}
+
+/* loader */
+
+.loader
+{
+    animation-name: loader-animation;
+    animation-duration: 2000ms;
+    animation-fill-mode: both;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    font-size: 44px;
+}

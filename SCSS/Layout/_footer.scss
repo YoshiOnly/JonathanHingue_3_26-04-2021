@@ -1,0 +1,36 @@
+/* footer */
+
+footer
+{
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+.footer_icon
+{
+    margin-right: 15px;
+}
+
+.titre_footer
+{
+    font-family: "Shrikhand";
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.lien_footer
+{
+    display: flex;
+    width: 100%;
+    font-family: "Roboto";
+    padding-bottom: 2%;
+    color: $white;
+}
