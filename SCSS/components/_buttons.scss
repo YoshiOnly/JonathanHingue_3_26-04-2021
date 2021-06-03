@@ -6,8 +6,9 @@
   color: $white;
   height: 65px !important;
   width: 70%;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  max-width: 400px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   padding-left: 5%;
   padding-right: 5%;
   &:hover{
@@ -29,7 +30,7 @@
     position: relative;
     left: 25%;
     line-height: 3;
-    margin-top: 10%;
+    margin-top: 40px;
     &:hover{
       animation-name: btn-click ;
       animation-duration: 500ms;

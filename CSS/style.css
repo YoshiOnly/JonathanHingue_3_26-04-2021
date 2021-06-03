@@ -7,8 +7,9 @@
   color: white;
   height: 65px !important;
   width: 70%;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  max-width: 400px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -29,7 +30,7 @@
   position: relative;
   left: 25%;
   line-height: 3;
-  margin-top: 10%;
+  margin-top: 40px;
 }
 .btn_commander:hover {
   animation-name: btn-click;
@@ -82,6 +83,16 @@
     outline-width: 5px;
   }
 }
+@keyframes like-animation2 {
+  0% {
+    font-weight: 400;
+    color: #ececec;
+  }
+  100% {
+    color: red;
+    font-weight: 800;
+  }
+}
 @keyframes bloc-apparition {
   0% {
     transform: translate(0px, 40px);
@@ -104,6 +115,16 @@
     display: none;
     background-color: transparent;
     color: transparent;
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-background-animation {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: transparent;
+    z-index: -1;
   }
 }
 .animation_delay_1 {
@@ -140,13 +161,23 @@
 
 /* loader */
 .loader {
+  animation-name: loader-background-animation;
+  animation-duration: 4000ms;
+  animation-fill-mode: both;
+  position: fixed;
+  font-size: 44px;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.loader::before {
   animation-name: loader-animation;
   animation-duration: 2000ms;
   animation-fill-mode: both;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  font-size: 44px;
 }
 
 /* Texte */
@@ -189,8 +220,13 @@ main {
   font-family: "Roboto";
 }
 
+h1 {
+  margin: 0%;
+  padding: 5%;
+}
+
 h2 {
-  width: 100%;
+  width: 95% !important;
 }
 
 figcaption {
@@ -198,6 +234,15 @@ figcaption {
   padding-left: 20px;
   display: flex;
   padding-top: 10px;
+}
+
+h1 {
+  margin-top: 0%;
+}
+
+/* debug */
+.hand_icon {
+  font-size: 11px;
 }
 
 /* @import "./layout/_container"; */
@@ -215,8 +260,8 @@ figcaption {
 
 .reservation {
   background-color: #ececec;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -279,6 +324,7 @@ footer {
 .fonctionnement .fonctionnement__bloc {
   display: flex;
   width: 90%;
+  max-width: 350px;
   height: 100px;
   background-color: #ececec;
   justify-content: center;
@@ -311,6 +357,7 @@ footer {
 
 .restaurants {
   display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #ececec;
   flex-wrap: wrap;
@@ -327,6 +374,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90%;
+  max-width: 400px;
   background-color: white;
   border-radius: 35px;
   margin: 25px 5px 5px 5px;
@@ -349,6 +397,21 @@ footer {
   position: relative;
   top: -10%;
   left: 10%;
+}
+
+.bloc_restaurants_txt {
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  padding-top: 10px;
+}
+
+figcaption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 /* menu */
@@ -463,7 +526,12 @@ footer {
   animation-fill-mode: both;
 }
 .menu__titre:hover .menu__like {
-  display: none;
+  font-weight: 800 !important;
+  color: red;
+  animation-name: like-animation2;
+  animation-duration: 2500ms;
+  animation-fill-mode: both;
+  text-shadow: 0 0 5px #646464;
 }
 
 .img_cover {
@@ -564,6 +632,26 @@ footer {
   padding-left: 5%;
   padding-top: 8px;
   font-size: 14px;
+}
+
+h2 {
+  width: 95% !important;
+}
+
+h1 {
+  margin: 0%;
+  padding: 20px;
+}
+
+.reservation {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+figcaption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

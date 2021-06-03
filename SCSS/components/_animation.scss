@@ -43,6 +43,17 @@
     }
 }
 
+@keyframes like-animation2 {
+    0%{
+        font-weight: 400;
+        color: $background_color;
+    }
+    100%{
+        color: red;
+        font-weight: 800;
+    }
+}
+
 @keyframes bloc-apparition{
     0% {
         transform: translate(0px,40px);
@@ -67,6 +78,19 @@
         display: none;
         background-color: transparent;
         color: transparent;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-background-animation
+{
+    0%{
+        background-color: $white;
+    }
+
+    100%{
+        background-color: transparent;
+        z-index: -1;
     }
 }
 
@@ -99,11 +123,23 @@
 
 .loader
 {
-    animation-name: loader-animation;
-    animation-duration: 2000ms;
-    animation-fill-mode: both;
+    animation-name: loader-background-animation;
+        animation-duration: 4000ms;
+        animation-fill-mode: both;
+
     position:fixed;
-    left: 50%;
-    top: 50%;
     font-size: 44px;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    &::before{
+        animation-name: loader-animation;
+        animation-duration: 2000ms;
+        animation-fill-mode: both;
+    }
 }

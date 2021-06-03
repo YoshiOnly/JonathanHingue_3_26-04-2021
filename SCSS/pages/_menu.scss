@@ -127,7 +127,12 @@
             animation-fill-mode: both;
         }
         .menu__like{
-            display: none;
+            font-weight: 800 !important;
+            color: red;
+            animation-name: like-animation2;
+            animation-duration: 2500ms;
+            animation-fill-mode: both;
+            text-shadow: 0 0 5px rgb(100, 100, 100);
         }
     }
 }
