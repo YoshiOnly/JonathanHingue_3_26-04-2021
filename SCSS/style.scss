@@ -30,7 +30,7 @@ h2{
 
 h1{
     margin: 0%;
-    padding: 20px;
+    padding: 0px;
 }
 
 .reservation{
@@ -42,5 +42,14 @@ figcaption
 {
     width: 100%;
     display:flex;
+    flex-direction: column;
+}
+
+main
+{
+    font-family: "Roboto";
+    align-content: center;
+    align-items: center;
+    display: flex;
     flex-direction: column;
 }
