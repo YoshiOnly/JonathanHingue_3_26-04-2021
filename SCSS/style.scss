@@ -30,7 +30,9 @@ h2{
 
 h1{
     margin: 0%;
-    padding: 0px;
+    padding: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .reservation{
@@ -52,4 +54,26 @@ main
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+
+.titre_footer
+{
+    font-family: "Shrikhand";
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.lien_footer
+{
+    display: flex;
+    width: 100%;
+    font-family: "Roboto";
+    padding-bottom: 30px;
+    color: $white;
+}
+
+.txt--small{
+    font-size: 15px !important;
 }

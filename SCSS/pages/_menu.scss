@@ -110,6 +110,7 @@
     color: grey;
     padding-left: 5%;
     }
+
 .menu__like-on
 {
     color: red;
@@ -119,19 +120,18 @@
 
 .menu__titre{
     &:hover{
-        .menu__like-on{
-            display: block;
-            animation-name: like-animation;
-            animation-duration: 2500ms;
-            animation-fill-mode: both;
-        }
         .menu__like{
             font-weight: 800 !important;
-            color: red;
             animation-name: like-animation2;
-            animation-duration: 2500ms;
+            animation-duration: 1000ms;
             animation-fill-mode: both;
-            text-shadow: 0 0 5px rgb(100, 100, 100);
+            text-shadow: 0 0 5px rgb(146, 102, 155);
+            &::before{
+                background-clip: text;
+                animation-name: like-animation;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+            }
         }
     }
 }
@@ -171,6 +171,7 @@
     position: relative;
     top: -50px;
     background-color: $background_color;
+    max-width: 1000px;
     
 
     .menu__bloc{
@@ -250,4 +251,12 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .menu__titre{
+        font-size: 70px;
+    }
+
 }

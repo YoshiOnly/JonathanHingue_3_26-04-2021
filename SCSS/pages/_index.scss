@@ -12,12 +12,13 @@
     font-family: "Roboto";
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 80px;
+    margin-top: 40px;
     .fonctionnement__bloc
     {
         display: flex;
         width: 90%;
-        max-width: 350px;
+        max-width: 400px;
         height: 100px;
         background-color: $background_color;
         justify-content: center;
@@ -27,6 +28,12 @@
         -webkit-box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
         -moz-box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
         box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
+        &:hover{
+            background: lighten($primary_color, 35%);
+            .fonctionnement__bloc--icon{
+                color: $primary_color;
+            }
+        }
         .fonctionnement__bloc--number
         {
             background-color: $primary_color;
@@ -39,7 +46,7 @@
             line-height:26px;
             color: $white;
             position: relative;
-            left: -30%;
+            left: -27%;
         }
         .fonctionnement__bloc--icon
         {
@@ -62,8 +69,8 @@
     justify-content: center;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 10px;
+    padding-bottom: 80px;
     max-width: 1000px;
     .restaurants__bloc
     {
@@ -94,15 +101,16 @@
         .restaurants__bloc--like {
             color: grey;
             position: relative;
-            top: -15%;
+            top: -21%;
             left: 10%;
+            font-size: 30px;
         }
     }
 }
 
 .bloc_restaurants_txt
 {
-    width: 100%;
+    width: 90%;
     padding-left: 20px;
     display:flex;
     padding-top: 10px;
@@ -127,13 +135,31 @@ figcaption
     border-color: $third_color;
     color: darken($third_color, 35%);
     width: 65px;
+    height: 20px;
 }
 .restaurants__bloc--like{
     color:grey;
     position: relative;
-    top: -15%;
+    top: -21%;
     left: 10%;
-    
+    font-size: 30px;
+    &:hover{
+        .like{
+            font-weight: 800 !important;
+            animation-name: like-animation2;
+            animation-duration: 1000ms;
+            animation-fill-mode: both;
+            text-shadow: 0 0 5px rgb(146, 102, 155);
+            &::before{
+                font-weight: 800 !important;
+                background-clip: text;
+                animation-name: like-animation;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+            }
+        }
+            
+    }
 }
 
 .restaurants__bloc
@@ -151,10 +177,28 @@ figcaption
         -webkit-box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
         -moz-box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
         box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
+        &:hover{
+            -webkit-box-shadow: 0px 0px 5px 1px $primary_color;
+            -moz-box-shadow: 0px 0px 5px 1px $primary_color;
+            box-shadow: 0px 0px 5px 1px $primary_color;
+            animation-name: restaurant__bloc;
+            animation-duration: 800ms;
+            animation-fill-mode: both;
+        }
     }
 
     .restaurants__bloc--figure{
         width: 100%;
         height: 100%;
         margin: 0px;
+    }
+
+    @media screen and (max-width: 360px) {
+        .fonctionnement__bloc--number {
+            left: -25% !important;
+        }
+
+        .restaurants__bloc--nouveau {
+            left: 50% !important;
+        }
     }
