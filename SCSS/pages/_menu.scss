@@ -127,7 +127,7 @@
             animation-fill-mode: both;
             text-shadow: 0 0 5px rgb(146, 102, 155);
             &::before{
-                background-clip: text;
+                -webkit-background-clip: text;
                 animation-name: like-animation;
                 animation-duration: 1000ms;
                 animation-fill-mode: both;

@@ -74,7 +74,7 @@
 @keyframes like-animation {
   0% {
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
   }
   100% {
     /* background: -webkit-gradientlinear-gradient(#FF79DA, #9356DC); */
@@ -87,7 +87,7 @@
 }
 @keyframes like-animation2 {
   0% {
-    font-weight: 1;
+    font-weight: 400;
     color: transparent;
     text-shadow: 0 0 1px gray;
     -webkit-background-clip: text;
@@ -482,7 +482,7 @@ figcaption {
 }
 .restaurants__bloc--like:hover .like::before {
   font-weight: 800 !important;
-  background-clip: text;
+  -webkit-background-clip: text;
   animation-name: like-animation;
   animation-duration: 1000ms;
   animation-fill-mode: both;
@@ -641,7 +641,7 @@ figcaption {
   text-shadow: 0 0 5px #92669b;
 }
 .menu__titre:hover .menu__like::before {
-  background-clip: text;
+  -webkit-background-clip: text;
   animation-name: like-animation;
   animation-duration: 1000ms;
   animation-fill-mode: both;

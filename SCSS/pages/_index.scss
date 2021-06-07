@@ -151,7 +151,7 @@ figcaption
             animation-fill-mode: both;
             &::before{
                 font-weight: 800 !important;
-                background-clip: text;
+                -webkit-background-clip: text;
                 animation-name: like-animation;
                 animation-duration: 1000ms;
                 animation-fill-mode: both;
