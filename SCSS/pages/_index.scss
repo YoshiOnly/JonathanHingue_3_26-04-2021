@@ -149,7 +149,6 @@ figcaption
             animation-name: like-animation2;
             animation-duration: 1000ms;
             animation-fill-mode: both;
-            text-shadow: 0 0 5px rgb(146, 102, 155);
             &::before{
                 font-weight: 800 !important;
                 background-clip: text;
@@ -178,9 +177,6 @@ figcaption
         -moz-box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
         box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
         &:hover{
-            -webkit-box-shadow: 0px 0px 5px 1px $primary_color;
-            -moz-box-shadow: 0px 0px 5px 1px $primary_color;
-            box-shadow: 0px 0px 5px 1px $primary_color;
             animation-name: restaurant__bloc;
             animation-duration: 800ms;
             animation-fill-mode: both;
@@ -201,4 +197,9 @@ figcaption
         .restaurants__bloc--nouveau {
             left: 50% !important;
         }
+    }
+
+    .reservation{
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
     }

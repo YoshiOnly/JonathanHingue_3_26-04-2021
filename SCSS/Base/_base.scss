@@ -18,6 +18,10 @@ main
     flex-direction: column;
 }
 
+h2{
+    width: 95% !important;
+}
+
 h1{
     margin: 0%;
     padding: 0%;
@@ -25,9 +29,6 @@ h1{
     margin-bottom: 20px;
 }
 
-h2{
-    width: 95% !important;
-}
 figcaption
 {
     width: 100%;
@@ -46,4 +47,11 @@ h1{
 .hand_icon
 {
     font-size: 11px;
+}
+
+figcaption
+{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
 }

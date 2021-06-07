@@ -12,8 +12,9 @@
 @import "./base/_base";
 
 /* @import "./layout/_container"; */
-@import "./layout/_header";
 @import "./layout/_footer";
+@import "./layout/_header";
+
 @import "./layout/_nav";
 @import "./layout/_form";
 
@@ -22,58 +23,3 @@
 @import "./pages/_work";
 @import "./pages/_about";
 @import "./pages/_project";
-
-
-h2{
-    width: 95% !important;
-}
-
-h1{
-    margin: 0%;
-    padding: 0%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.reservation{
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-}
-
-figcaption
-{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-}
-
-main
-{
-    font-family: "Roboto";
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.titre_footer
-{
-    font-family: "Shrikhand";
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
-.lien_footer
-{
-    display: flex;
-    width: 100%;
-    font-family: "Roboto";
-    padding-bottom: 30px;
-    color: $white;
-}
-
-.txt--small{
-    font-size: 15px !important;
-}
