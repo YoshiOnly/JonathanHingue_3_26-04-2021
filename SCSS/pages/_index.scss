@@ -17,17 +17,18 @@
     .fonctionnement__bloc
     {
         display: flex;
-        width: 90%;
+        width: 85%;
         max-width: 400px;
-        height: 100px;
+        height: 70px;
         background-color: $background_color;
         justify-content: center;
         align-items: center;
-        border-radius: 35px;
-        margin: 5px;
-        -webkit-box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
-        -moz-box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
-        box-shadow: 1px 1px 3px 1px rgba(222,222,222,1);
+        border-radius: 20px;
+        margin: 10px;
+        -webkit-box-shadow: 2px 2px 3px 2px rgba(222,222,222,1);
+        -moz-box-shadow: 2px 2px 3px 2px rgba(222,222,222,1);
+        box-shadow: 2px 2px 3px 2px rgba(222,222,222,1);
+        font-weight: bold;
         &:hover{
             background: lighten($primary_color, 35%);
             .fonctionnement__bloc--icon{
@@ -46,14 +47,19 @@
             line-height:26px;
             color: $white;
             position: relative;
-            left: -27%;
+            left: -23%;
         }
         .fonctionnement__bloc--icon
         {
             color:grey;
             font-size: 20px;
             position: relative;
-            left: -65px;
+            left: -10%;
+        }
+        .fonctionnement__bloc--txt
+        {
+            position: relative;
+            left:5px;
         }
     }
 }
